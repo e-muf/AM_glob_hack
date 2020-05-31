@@ -44,7 +44,7 @@ public class logginFragment extends Fragment {
             }
         });
     }
-    public void autenticar{
+    public void autenticar(){
         String nombreUsuario = "";
         String contraseña = "";
         nombreUsuario = String.valueOf(nombre.getText());
@@ -56,7 +56,7 @@ public class logginFragment extends Fragment {
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
             }
-        })
+        });
 
     }
 }
