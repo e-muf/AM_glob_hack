@@ -28,6 +28,7 @@
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/nombreUsr"
         android:hint="¿Cómo quieres que te reconozcan?"
         android:textSize="20dp"
         android:inputType="textCapSentences"
@@ -55,6 +56,7 @@
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/passUsr"
         android:hint="***********"
         android:textSize="20dp"
         android:inputType="textPassword"
@@ -88,19 +90,21 @@
         android:orientation="horizontal">
 
 
-
         <Button
-          android:layout_width="100dp"
-          android:layout_height="wrap_content"
-          android:layout_marginLeft="30dp"
-            android:text="opcion1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
-          android:background="@drawable/redondo"
-          />
+            android:id="@+id/btnPref1"
+            android:text="opcion1"
+            android:background="@drawable/redondo"
+            />
+
 
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:id="@+id/btnPref2"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:text="opcion2"
@@ -110,6 +114,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:id="@+id/btnPref3"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:text="opcion3"
@@ -130,6 +135,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:id="@+id/btnPref4"
             android:layout_marginLeft="30dp"
             android:text="opcion4"
             android:layout_marginTop="20dp"
@@ -139,6 +145,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:id="@+id/btnPref5"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:text="opcion5"
@@ -148,6 +155,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:id="@+id/btnPref6"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:text="opcion6"
@@ -168,6 +176,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
+        android:id="@+id/btnFinalizar"
         android:layout_marginRight="30dp"
         android:layout_marginTop="50dp"
         android:text="Finalizar"
