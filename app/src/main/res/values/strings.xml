@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">eco_impulse</string>
+    <string name="crear_reunion">Crear Reunión</string>
+    <string name="publicar_btn">Publicar</string>
 </resources>

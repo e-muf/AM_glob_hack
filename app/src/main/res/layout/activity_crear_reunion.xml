@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearReunion">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:background="#8BC34A">
+
+        <TextView
+            android:id="@+id/titulo_reunion_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="@string/crear_reunion"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.139"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.494" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/materiales_tvm"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="317dp"
+                android:layout_height="117dp"
+                android:layout_marginBottom="32dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="¿Se requerida algo para la actividad?"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/actividad_pt2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.382"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/actividad_ptm"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="317dp"
+                android:layout_height="117dp"
+                android:layout_marginBottom="24dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Explica tu actividad"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/tit_materiales_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.382"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/actividad_pt"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="242dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="68dp"
+                android:ems="10"
+                android:hint="Actividad a realizar"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/actividad_pt2"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="321dp"
+                android:layout_height="47dp"
+                android:layout_marginBottom="24dp"
+                android:ems="10"
+                android:hint="Av. Siempre ecológica ..."
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/publicar_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.404"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/in_date"
+                android:layout_width="118dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="Fecha"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/tit_act_realizar_tv"
+                app:layout_constraintEnd_toStartOf="@+id/btn_date"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/actividad_pt"
+                app:layout_constraintVertical_bias="0.615" />
+
+            <EditText
+                android:id="@+id/in_time"
+                android:layout_width="103dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="Hora"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/tit_act_realizar_tv"
+                app:layout_constraintEnd_toStartOf="@+id/btn_time"
+                app:layout_constraintTop_toBottomOf="@+id/actividad_pt"
+                app:layout_constraintVertical_bias="0.615" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/actividad_pt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/actividad_pt"
+                app:layout_constraintTop_toBottomOf="@+id/tit_reunion_tv"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <ImageButton
+                android:id="@+id/btn_date"
+                android:layout_width="52dp"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toBottomOf="@+id/in_date"
+                app:layout_constraintEnd_toStartOf="@+id/in_time"
+                app:layout_constraintTop_toTopOf="@+id/in_date"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+            <ImageButton
+                android:id="@+id/btn_time"
+                android:layout_width="48dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:src="@android:drawable/ic_menu_recent_history"
+                app:layout_constraintBottom_toBottomOf="@+id/in_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/in_time" />
+
+            <TextView
+                android:id="@+id/tit_act_realizar_tv"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actividad a realizar"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/actividad_ptm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tit_materiales_tv"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materiales"
+                android:textColor="#090909"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/materiales_tvm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.11"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tit_materiales_tv2"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicación"
+                android:textColor="#090909"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/actividad_pt2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materiales_tvm" />
+
+            <TextView
+                android:id="@+id/tit_reunion_tv"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título para la reunión"
+                android:textColor="#131313"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/actividad_pt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.972" />
+
+            <Button
+                android:id="@+id/publicar_btn"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="124dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="16dp"
+                android:background="#8BC34A"
+                android:text="@string/publicar_btn"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>
