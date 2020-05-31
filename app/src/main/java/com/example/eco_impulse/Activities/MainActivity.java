@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         tab1 = findViewById(R.id.opcion1);
         tab2 = findViewById(R.id.opcion2);
         tab3 = findViewById(R.id.opcion3);
-        pagerAdapter = new PagerController(getSupportFragmentManager(),2);
+        pagerAdapter = new PagerController(getSupportFragmentManager(),3);
         viewPager.setAdapter(pagerAdapter);
         //tabLayout.setupWithViewPager(viewPager);
         /*tabLayout.setOnTabSelectedListener(new TabLayout.BaseOnTabSelectedListener() {
