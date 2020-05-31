@@ -21,5 +21,5 @@ public class AppPreferences {
     public boolean isLogued(){
         return appData.getBoolean("loginStatus", false);
     }
-
+///
 }
