@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         tab3 = findViewById(R.id.opcion3);
         pagerAdapter = new PagerController(getSupportFragmentManager(),2);
         viewPager.setAdapter(pagerAdapter);
+        getSupportActionBar().hide();
         //tabLayout.setupWithViewPager(viewPager);
         /*tabLayout.setOnTabSelectedListener(new TabLayout.BaseOnTabSelectedListener() {
             @Override
